@@ -12,7 +12,7 @@ var alink = link1
         const puppeteer = require('puppeteer')
         const browser = await puppeteer.launch({headless : false})
         const [page] = await browser.pages()
-        await page.setViewport({width: 900, height: 1920})
+        await page.setViewport({width: 1, height: 1})
         await page.goto(alink)
         const result = await page.evaluate(() => {
             let headingfromweb = document.querySelectorAll(".colour-size-select")
